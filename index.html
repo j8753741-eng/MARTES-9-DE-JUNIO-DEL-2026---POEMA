@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>martes 9 de junio del 2026 - poema</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    background:
+    radial-gradient(circle at top,#2b2147 0%,#161124 40%,#0a0912 100%);
+    overflow-x:hidden;
+    font-family:'Cormorant Garamond', serif;
+    color:#fdf7ff;
+}
+
+/* Estrellas */
+
+.stars{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    pointer-events:none;
+}
+
+.stars span{
+    position:absolute;
+    color:white;
+    opacity:.8;
+    animation:twinkle 4s infinite ease-in-out;
+}
+
+@keyframes twinkle{
+    0%,100%{opacity:.2;}
+    50%{opacity:1;}
+}
+
+/* Corazones flotantes */
+
+.heart{
+    position:fixed;
+    color:rgba(255,180,220,.25);
+    animation:float 15s linear infinite;
+    pointer-events:none;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+    15%{
+        opacity:1;
+    }
+    to{
+        transform:translateY(-120vh);
+        opacity:0;
+    }
+}
+
+/* Contenedor principal */
+
+.poem-box{
+    width:100%;
+    max-width:950px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:35px;
+    padding:70px;
+    box-shadow:
+    0 0 40px rgba(255,182,255,.15),
+    0 0 100px rgba(255,255,255,.05);
+    position:relative;
+}
+
+.poem-box::before{
+    content:"♥";
+    position:absolute;
+    top:25px;
+    left:35px;
+    font-size:28px;
+    color:#ffd4ec;
+}
+
+.poem-box::after{
+    content:"♥";
+    position:absolute;
+    bottom:25px;
+    right:35px;
+    font-size:28px;
+    color:#ffd4ec;
+}
+
+.title{
+    text-align:center;
+    font-family:'Great Vibes', cursive;
+    font-size:5rem;
+    color:#ffd8f0;
+    margin-bottom:10px;
+    text-shadow:
+    0 0 15px rgba(255,200,230,.8);
+}
+
+.subtitle{
+    text-align:center;
+    color:#f3dfff;
+    letter-spacing:3px;
+    margin-bottom:50px;
+    font-size:1.2rem;
+}
+
+.divider{
+    width:180px;
+    height:1px;
+    margin:0 auto 50px;
+    background:linear-gradient(to right,
+    transparent,
+    rgba(255,220,240,.9),
+    transparent);
+}
+
+.poem{
+    text-align:center;
+    line-height:2.2;
+    font-size:1.45rem;
+    color:#fffdfd;
+}
+
+.poem p{
+    margin-bottom:26px;
+}
+
+.signature{
+    margin-top:70px;
+    text-align:center;
+}
+
+.signature .love{
+    font-family:'Great Vibes', cursive;
+    font-size:2.8rem;
+    color:#ffd8f0;
+}
+
+.signature .name{
+    margin-top:15px;
+    font-size:1.2rem;
+    letter-spacing:2px;
+    color:#f8ebff;
+}
+
+.glow{
+    color:#ffe4f5;
+    text-shadow:0 0 12px rgba(255,210,235,.8);
+}
+
+@media(max-width:768px){
+
+    .poem-box{
+        padding:40px 25px;
+    }
+
+    .title{
+        font-size:3.3rem;
+    }
+
+    .poem{
+        font-size:1.2rem;
+        line-height:2;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stars">
+    <span style="top:10%;left:15%;">✦</span>
+    <span style="top:20%;left:80%;">✧</span>
+    <span style="top:35%;left:10%;">✦</span>
+    <span style="top:15%;left:60%;">✧</span>
+    <span style="top:70%;left:75%;">✦</span>
+    <span style="top:80%;left:20%;">✧</span>
+    <span style="top:60%;left:90%;">✦</span>
+</div>
+
+<div class="heart" style="left:10%;font-size:25px;">♥</div>
+<div class="heart" style="left:30%;font-size:20px;animation-delay:4s;">♥</div>
+<div class="heart" style="left:50%;font-size:30px;animation-delay:8s;">♥</div>
+<div class="heart" style="left:70%;font-size:22px;animation-delay:2s;">♥</div>
+<div class="heart" style="left:90%;font-size:28px;animation-delay:6s;">♥</div>
+
+<div class="poem-box">
+
+    <h1 class="title">Mi Lugar Favorito Es Tu Corazón</h1>
+
+    <div class="subtitle">
+        Martes 9 de Junio de 2026 • Bajo un cielo lleno de amor
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="poem">
+
+        <p>
+        Esta noche de martes, 9 de junio de 2026,
+        cuando el silencio de la noche se posa suavemente sobre el mundo
+        y las estrellas parecen encenderse una a una
+        como pequeñas promesas brillando en la inmensidad del cielo,
+        mi corazón vuelve a encontrarte.
+        </p>
+
+        <p>
+        Y no podría ser de otra manera,
+        porque desde que llegaste a mi vida
+        te convertiste en el pensamiento más hermoso de mis días,
+        en la emoción más intensa de mis noches,
+        y en el sueño más precioso que jamás he tenido.
+        </p>
+
+        <p class="glow">
+        Amarte se ha vuelto tan natural como respirar.
+        </p>
+
+        <p>
+        Te amo cuando sonríes,
+        cuando me hablas,
+        cuando me miras,
+        cuando me abrazas,
+        pero también te amo cuando no estás conmigo,
+        porque incluso en la distancia
+        sigues llenando cada rincón de mi alma.
+        </p>
+
+        <p>
+        Esta noche pienso en ti más que nunca...
+        Pienso en tus ojos,
+        en tus labios,
+        en tu voz,
+        y en todo aquello que convierte cada instante contigo
+        en algo imposible de olvidar.
+        </p>
+
+        <p>
+        Y mientras la luna observa desde lo alto,
+        confieso que sigo enamorándome de ti,
+        con la intensidad de quien encontró
+        el amor que siempre soñó.
+        </p>
+
+        <p class="glow">
+        Porque tú no eres solamente la mujer que amo...
+        eres mi paz,
+        mi alegría,
+        mi refugio,
+        y la razón por la que mi corazón late con tanta fuerza.
+        </p>
+
+        <p>
+        Esta noche deseo imaginarte cerca de mí,
+        tomar tus manos,
+        mirarte a los ojos,
+        sentir tu presencia
+        y perderme en la belleza de tu sonrisa.
+        </p>
+
+        <p>
+        Si pudiera pedir un deseo,
+        pediría más tiempo contigo,
+        más abrazos,
+        más besos,
+        más amaneceres compartidos,
+        y más noches donde pueda decirte cuánto te amo.
+        </p>
+
+        <p>
+        Quiero seguir construyendo recuerdos contigo,
+        seguir descubriendo nuevas razones para enamorarme,
+        y seguir escribiendo nuestra historia
+        con la misma emoción que siento hoy.
+        </p>
+
+        <p>
+        Y si algún día las estrellas dejaran de brillar,
+        si la luna desapareciera del cielo,
+        si el mundo entero cambiara por completo,
+        habría algo que jamás cambiaría:
+        el amor inmenso que vive dentro de mí por ti.
+        </p>
+
+        <p class="glow">
+        Te amo con cada pensamiento,
+        con cada suspiro,
+        con cada latido.
+        </p>
+
+        <p>
+        Y esta noche,
+        bajo este cielo lleno de estrellas,
+        quiero que recuerdes una sola cosa:
+        eres el amor más hermoso que ha llegado a mi vida,
+        el sueño que jamás quiero dejar de vivir,
+        y el lugar favorito donde siempre descansa mi corazón.
+        </p>
+
+    </div>
+
+    <div class="signature">
+        <div class="love">Te amo, mi princesa hermosa</div>
+        <div class="name">
+            Más de lo que el universo podría llegar a medir ♥
+        </div>
+    </div>
+
+</div>
+
+</body>
+  </html>
